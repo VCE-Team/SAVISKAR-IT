@@ -5590,8 +5590,27 @@ ul {
 .birdie {
   margin-top:-60vw ;
 }
-#responsive-register{
+.responsive-register{
   display: none;
+  text-align: center;
+  height: 60px;
+  line-height: 60px;
+  font-size: 16px;
+  text-transform: capitalize;
+  font-weight: 600;
+  color: #fff;
+  width: 202px;
+  background-color: #500ade;
+  padding: 0 20px;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
+  border-radius: 25px;
+}
+.responsive-register:hover {
+  color: #fff;
+  background-color: #333333;
 }
 
 @media only screen and (max-width: 767px){
@@ -5601,7 +5620,7 @@ ul {
   .logoPhone{
     display: block;
   }
-  #responsive-register{
+  .responsive-register{
     display: block;
   }
   #gap-filling{
