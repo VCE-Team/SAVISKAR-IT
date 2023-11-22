@@ -5352,7 +5352,7 @@ ul {
   display: flex;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .single-post-details-item .entry-footer .left {
   display: inline-block;
@@ -5590,6 +5590,9 @@ ul {
 .birdie {
   margin-top:-60vw ;
 }
+#responsive-register{
+  display: none;
+}
 
 @media only screen and (max-width: 767px){
   .logo{
@@ -5597,5 +5600,11 @@ ul {
   }
   .logoPhone{
     display: block;
+  }
+  #responsive-register{
+    display: block;
+  }
+  #gap-filling{
+    margin-top: -0.7vw;
   }
 }
