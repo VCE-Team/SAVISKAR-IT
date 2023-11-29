@@ -5627,3 +5627,10 @@ ul {
     margin-top: -0.7vw;
   }
 }
+
+
+.reg-strip{
+  color: white;
+  background-color: green;
+  padding: 0.5vw;
+}
