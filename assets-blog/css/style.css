@@ -5567,9 +5567,9 @@ body {
 .navbar{
   background-color: #852aff;
 } 
-/* .carousel{
+.carousel{
   margin: 2rem;
-} */
+}
 #carouselExampleFade>p,.gallery-heading>p{
   font-size: 45px;
   font-weight: 900;
@@ -5577,6 +5577,7 @@ body {
   text-align: center;
   font-family: "Poppins", sans-serif;
   margin-top: 9rem;
+  overflow: visible;
 }
 
 .gallery>.image{
