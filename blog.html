@@ -18,7 +18,6 @@
       integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
       crossorigin="anonymous"
     />
-    <!-- <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" /> -->
     <link rel="stylesheet" href="assets-blog/css/bootstrap.min.css" />
     <link rel="stylesheet" href="assets-blog/css/fontawesome.5.7.2.css" />
     <link rel="stylesheet" href="assets-blog/css/flaticon.css" />
@@ -66,11 +65,11 @@
         </div>
       </div>
     </nav>
-   
+
     <div class="gallery-heading">
       <p>SAVISKAR 2K22 Celebration</p>
       <div class="gallery">
-        <div class="image">
+        <div class="image-grid">
           <img
             src="assets-blog/img/blog/1.JPG"
             alt="saviskar 2k22 images"
@@ -131,6 +130,10 @@
             alt="saviskar 2k22 images"
             srcset=""
           />
+        </div>
+        <div class="fullscreen-popup" style="display: none">
+          <img src="" alt="Full-screen image" />
+          <div class="close-button">X</div>
         </div>
       </div>
     </div>
@@ -214,7 +217,6 @@
                       ><i class="fas fa-chevron-right"></i> About Us</a
                     >
                   </li>
-                  <!-- <i class="fa fa-chevron-right" aria-hidden="true"></i> -->
                   <li>
                     <a href="blog.html"
                       ><i class="fas fa-chevron-right"></i> Blog</a
@@ -281,49 +283,20 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <!-- .....>>>> Zoom in 2k22 images.....<<<<< -->
     <script>
-      let slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides((slideIndex += n));
-      }
-
-      function currentSlide(n) {
-        showSlides((slideIndex = n));
-      }
-
-      function showSlides(n) {
-        let i;
-        let slides = document.getElementsByClassName("mySlides");
-        let dots = document.getElementsByClassName("dot");
-        if (n > slides.length) {
-          slideIndex = 1;
-        }
-        if (n < 1) {
-          slideIndex = slides.length;
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-      }
+      const images = document.querySelectorAll(".image-grid img");
+      const fullscreenPopup = document.querySelector(".fullscreen-popup");
+      const closeButton = document.querySelector(".close-button");
+      images.forEach((image) => {
+        image.addEventListener("click", () => {
+          fullscreenPopup.querySelector("img").src = image.src;
+          fullscreenPopup.style.display = "block";
+        });
+      });
+      closeButton.addEventListener("click", () => {
+        fullscreenPopup.style.display = "none";
+      });
     </script>
-    <!-- 
-<script>
-  document.querySelectorAll('.image-container>img').forEach(image=>{
-  image.onclick=()=>{
-    document.querySelector('.popup-image').style.display="block";
-    document.querySelector('.popup').src = image.getAttribute('.src');
-  }
-});
-document.querySelector('span').onclick=()=>{
-  document.querySelector('.popup-image').style.display="none";
-}
-</script> -->
   </body>
 </html>
