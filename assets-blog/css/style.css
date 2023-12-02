@@ -56,15 +56,6 @@
 /*---------------------------
 ** Global 
 ---------------------------*/
-:root {
-  --main-color-one: #500ade;
-  --main-color-two: #852aff;
-  --secondary-color: #333333;
-  --heading-color: #1c144e;
-  --paragraph-color: #666666;
-  --heading-font: "Poppins", sans-serif;
-  --body-font: "Poppins", sans-serif;
-}
 
 .dark-bg {
   background-color: #10102d;
@@ -1221,14 +1212,6 @@ html {
   font-family: "Poppins", sans-serif;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
-  overflow-x: hidden;
-}
-
-body {
-  font-family: "Poppins", sans-serif;
-  font-size: 16px;
-  margin: 0;
-  color: #666666;
   overflow-x: hidden;
 }
 
@@ -5569,4 +5552,208 @@ ul {
   border-radius: 5px;
   font-weight: 500;
   line-height: 50px;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  margin: 0;
+  color: #666666;
+  overflow-x: hidden;
+  background-color: rgba(86, 16, 224, 0.868);
+}
+.navbar {
+  background-color: #852aff;
+}
+/* ////////////
+      CAROUSEL
+//////////// */
+@keyframes fade {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+* {
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+.nav{
+  position: absolute;
+  top:0;
+}
+body {
+  height: 100%;
+}
+
+body h1 {
+  text-align: center;
+}
+#launch {
+  font-size: 45px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: 9rem;
+  margin-bottom: 2rem;
+  overflow: visible;
+}
+.slide-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 1000px;
+  margin: auto;
+  position: relative;
+}
+
+.slide-container .slide {
+  display: none;
+  width: 100%;
+}
+
+.slide-container .slide.fade {
+  animation: fade 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+.slide-container .slide img {
+  width: 100%;
+}
+
+.slide-container .prev,
+.slide-container .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  transition: all 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  /* user-select: none; */
+}
+
+.slide-container .prev:hover,
+.slide-container .next:hover {
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  color: whitesmoke;
+}
+
+.slide-container .prev {
+  left: 2px;
+}
+
+.slide-container .next {
+  right: 2px;
+}
+
+.dots-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+}
+
+.dots-container .dot {
+  cursor: pointer;
+  margin: 5px;
+  width: 20px;
+  height: 20px;
+  color: #333;
+  border-radius: 50%;
+  background-color: #dfd6ce;
+}
+
+.dots-container .dot.active {
+  border: 3px solid white;
+  background-color: #500ade;
+}
+/* ////////////
+      GALLERY
+//////////// */
+.gallery-heading > p {
+  font-size: 45px;
+  font-weight: 900;
+  color: white;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  margin-top: 2rem;
+  overflow: visible;
+}
+
+.gallery > .image-grid {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  margin: 40px;
+}
+.gallery > .image-grid {
+  background-color: white;
+}
+.image-grid > img {
+  /* width: 400px; */
+  border-radius: 12px;
+  box-shadow: 4px 7px 7px 0px;
+  cursor: pointer;
+  margin: 10px;
+  transition: 400ms;
+  object-fit: contain;
+}
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-grid img {
+  margin: 10px;
+  width: 20rem;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.fullscreen-popup {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color:#333333a; */
+  background-color:rgba(0, 0, 0, 0.8); ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.fullscreen-popup img {
+  max-width: 80%;
+  max-height: 80%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  object-fit: contain;
+}
+.close-button {
+  position: absolute;
+  top: 40px;
+  right: 40px;
+  font-size: 30px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
 }
