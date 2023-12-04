@@ -5595,7 +5595,7 @@ body h1 {
   text-align: center;
 }
 #launch {
-  font-size: 45px;
+  font-size: 3.8vw;
   font-weight: 900;
   color: white;
   text-align: center;
@@ -5681,7 +5681,7 @@ body h1 {
       GALLERY
 //////////// */
 .gallery-heading > p {
-  font-size: 45px;
+  font-size: 3vw;
   font-weight: 900;
   color: white;
   text-align: center;
