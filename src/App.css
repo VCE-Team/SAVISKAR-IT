@@ -1,0 +1,28 @@
+
+@font-face {
+  font-family: 'Zina_Complete';
+  src: url('./assets/fonts/Zina_Complete/Zina-Regular.ttf') format('truetype'); /* Adjust the path if necessary */
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'CabinetGrotesk_Complete';
+  src: url('./assets/fonts/CabinetGrotesk_Complete/CabinetGrotesk-Extrabold.ttf') format('truetype'); /* Adjust the path if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'NeueHaasGroteskDisplayPro';
+  src: url('./assets/fonts/Neue Haas Grotesk Display Pro/NeueHaasDisplayRoman.ttf') format('truetype'); /* Adjust the path if necessary */
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  @apply font-sans; /* Apply Tailwind's font-sans utility */
+}
+.font-cabinet {
+  font-family: 'CabinetGrotesk_Complete', sans-serif;
+}
+.font-neue {
+  font-family: 'NeueHaasGroteskDisplayPro', sans-serif;
+}
