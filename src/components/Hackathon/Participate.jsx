@@ -4,11 +4,11 @@ const Participate = () => {
   return (
     <div className='bg-black min-h-[70vh]'>
         <div className='p-10 px-16'>
-            <h1 className='text-white text-5xl'>
+            <h1 className='text-white text-3xl'>
             Who Can
             </h1>
 
-        <h1 className="text-6xl font-bold text-transparent "
+        <h1 className="text-5xl md:text-6xl font-bold text-transparent "
                         style={{
                             WebkitTextStrokeWidth: "2px",
                             WebkitTextStrokeColor: "white",

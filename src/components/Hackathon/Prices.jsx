@@ -7,57 +7,57 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
 
 const Prices = () => {
-  useEffect(() => {
-    // Text trigger
-    const textTrigger = ScrollTrigger.create({
-      trigger: "#sponsers-text",
-      start: "top 80%",
-      end: "bottom 70%",
-      onEnter: () => {
-        gsap.to("#sponsers-text", {
-          opacity: 1,
-          translateY: 0,
-          duration: 0.5,
-        });
-      },
-      onLeaveBack: () => {
-        gsap.to("#sponsers-text", {
-          opacity: 0,
-          translateY: 28,
-        });
-      },
-    });
+  // useEffect(() => {
+  //   // Text trigger
+  //   const textTrigger = ScrollTrigger.create({
+  //     trigger: "#sponsers-text",
+  //     start: "top 80%",
+  //     end: "bottom 70%",
+  //     onEnter: () => {
+  //       gsap.to("#sponsers-text", {
+  //         opacity: 1,
+  //         translateY: 0,
+  //         duration: 0.5,
+  //       });
+  //     },
+  //     onLeaveBack: () => {
+  //       gsap.to("#sponsers-text", {
+  //         opacity: 0,
+  //         translateY: 28,
+  //       });
+  //     },
+  //   });
 
-    // Batch trigger for sponsor cards
-    ScrollTrigger.batch(".sponser-card", {
-      start: "top 85%",
-      end: "top 20%",
-      onEnter: (batch) => 
-        gsap.to(batch, {
-          opacity: 1,
-          translateY: 0,
-          stagger: 0.5,
-          duration: 1,
-        }),
-      onLeaveBack: (batch) =>
-        gsap.to(batch, {
-          opacity: 0,
-          translateY: 32,
-          stagger: 0.5,
-        }),
-    });
+  //   // Batch trigger for sponsor cards
+  //   ScrollTrigger.batch(".sponser-card", {
+  //     start: "top 85%",
+  //     end: "top 20%",
+  //     onEnter: (batch) => 
+  //       gsap.to(batch, {
+  //         opacity: 1,
+  //         translateY: 0,
+  //         stagger: 0.5,
+  //         duration: 1,
+  //       }),
+  //     onLeaveBack: (batch) =>
+  //       gsap.to(batch, {
+  //         opacity: 0,
+  //         translateY: 32,
+  //         stagger: 0.5,
+  //       }),
+  //   });
 
-    return () => {
-      // Clean up all ScrollTriggers
-      ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
-    };
-  }, []);
+  //   return () => {
+  //     // Clean up all ScrollTriggers
+  //     ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
+  //   };
+  // }, []);
 
   return (
     <div id="sponsers" className="bg-black px-4 py-12">
       <h2
         id="sponsers-text"
-        className="text-4xl text-white font-bold md:text-5xl md:px-28 opacity-0 translate-y-28"
+        className="text-4xl text-white font-bold md:text-5xl md:px-28"
       >
         Exciting Prizes
       </h2>
@@ -111,7 +111,7 @@ const TiltCard = ({ title }) => {
         transformStyle: "preserve-3d",
         transform,
       }}
-      className="sponser-card relative h-96 w-72 rounded-xl bg-gradient-to-br from-indigo-300 to-violet-300 opacity-0 translate-y-32"
+      className="sponser-card relative h-96 w-72 rounded-xl bg-gradient-to-br from-indigo-300 to-violet-300"
     >
       <div
         style={{

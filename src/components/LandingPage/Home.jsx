@@ -6,7 +6,7 @@ const Home = () => {
   return (
     <div
     id="page1"
-    className="bg-gradient-to-b bg-black h-screen text-white"
+    className=" h-screen text-white"
     style={{
       backgroundImage: 'url(https://i.ibb.co/zPj1s3d/Home-page-Workshop.png)',
       backgroundSize: 'cover',
@@ -14,7 +14,7 @@ const Home = () => {
     }}
   >
       <header className="relative">
-        <div className='p-4 md:p-7'>
+        <div className='p-4 md:p-3'>
           <div className='flex justify-between'>
           <div className=''>
           <img
@@ -50,7 +50,7 @@ const Home = () => {
           Your browser does not support the video tag.
         </video>
 
-        <section className="relative flex justify-center items-center h-screen bg-black bg-opacity-60">
+        <section className="relative flex justify-center items-center h-screen bg-black opacity-50">
           <div className="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div className="flex justify-center">
               <div className="flex justify-center flex-col items-center">

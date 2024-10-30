@@ -34,52 +34,52 @@ const Countdown = ({ targetDate, eventTitle, location }) => {
 
   const formatTime = (time) => (time < 10 ? `0${time}` : time);
 
-  useEffect(() => {
-    const countdownTrigger = ScrollTrigger.create({
-      trigger: "#countdown",
-      start: "top 80%",
-      end: "bottom 70%",
-      onEnter: () => {
-        gsap.to("#countdown", {
-          opacity: 1,
-          translateY: 0,
-        });
-      },
-      onLeaveBack: () => {
-        gsap.to("#countdown", {
-          opacity: 0,
-          translateY: 28,
-        });
-      },
-    });
+  // useEffect(() => {
+  //   const countdownTrigger = ScrollTrigger.create({
+  //     trigger: "#countdown",
+  //     start: "top 80%",
+  //     end: "bottom 70%",
+  //     onEnter: () => {
+  //       gsap.to("#countdown", {
+  //         opacity: 1,
+  //         translateY: 0,
+  //       });
+  //     },
+  //     onLeaveBack: () => {
+  //       gsap.to("#countdown", {
+  //         opacity: 0,
+  //         translateY: 28,
+  //       });
+  //     },
+  //   });
 
-    const textTrigger = ScrollTrigger.create({
-      trigger: "#count",
-      start: "top 85%",
-      end: "top 20%",
-      onEnter: () => {
-        gsap.to("#countdown-text", {
-          opacity: 1,
-          translateY: 0,
-        });
-      },
-      onLeaveBack: () => {
-        gsap.to("#countdown-text", {
-          opacity: 0,
-          translateY: 32,
-        });
-      },
-    });
+  //   const textTrigger = ScrollTrigger.create({
+  //     trigger: "#count",
+  //     start: "top 85%",
+  //     end: "top 20%",
+  //     onEnter: () => {
+  //       gsap.to("#countdown-text", {
+  //         opacity: 1,
+  //         translateY: 0,
+  //       });
+  //     },
+  //     onLeaveBack: () => {
+  //       gsap.to("#countdown-text", {
+  //         opacity: 0,
+  //         translateY: 32,
+  //       });
+  //     },
+  //   });
 
-    return () => {
-      countdownTrigger.kill();
-      textTrigger.kill();
-    };
-  }, []);
+  //   return () => {
+  //     countdownTrigger.kill();
+  //     textTrigger.kill();
+  //   };
+  // }, []);
 
   return (
     <div id='countdown'
-      className="bg-black text-[#2DCDC4] rounded-xl p-6 md:px-24 md:py-10 bg-cover bg-center opacity-0 translate-y-28"
+      className="bg-black text-[#2DCDC4] rounded-xl p-6 md:px-24 md:py-10 bg-cover bg-center"
       style={{
         backgroundImage: "url('https://i.ibb.co/r3TYPYL/Hackathon-1.png)",
       }}
@@ -123,7 +123,7 @@ const App = () => {
   return (
     <div id='count' className='bg-black py-10'>
       <h2 id='countdown-text'
-      className="max-w-lg px-10 text-4xl text-white font-bold md:text-5xl md:px-28 opacity-0 translate-y-32">
+      className="max-w-lg px-10 text-4xl text-white font-bold md:text-5xl md:px-28">
           CountDown
           <span className="text-slate-400"></span>
         </h2>

@@ -124,10 +124,10 @@ const App = () => {
 
   return (
     <div id='count' className='bg-black'>
-      <h2 id='count-text' className="text-4xl font-bold md:text-5xl px-2 py-4 md:px-24 text-white opacity-0 translate-y-32">
+      <h2 id='count-text' className="text-3xl  font-bold md:text-5xl px-10 py-4 md:px-24 text-white opacity-0 translate-y-32">
       Unlock the Fun
                 </h2>
-                <h1 id='count-text' className="text-5xl md:text-6xl px-2 font-bold md:px-24 text-transparent opacity-0 translate-y-32"
+                <h1 id='count-text' className="text-4xl  md:text-6xl px-10 font-bold md:px-24 text-transparent opacity-0 translate-y-32"
                                         style={{
                                             WebkitTextStrokeWidth: "2px",
                                             WebkitTextStrokeColor: "white",

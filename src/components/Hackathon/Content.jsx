@@ -20,7 +20,7 @@ const Section1 = () => {
 const Section2 = () => {
     return (
         <div className='flex justify-between items-end sm:p-5'>
-            <h1 className='sm:text-[14vw] text-[10vh] leading-[0.8] mt-10'>Saviskar 2K24</h1>
+            <h1 className='sm:text-[14vw] text-[8vh] leading-[0.8] mt-10'>Saviskar 2K24</h1>
             <p>©copyright</p>
         </div>
     )
