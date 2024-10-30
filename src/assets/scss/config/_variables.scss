@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Bona+Nova:ital,wght@0,400;0,700;1,400&display=swap');
+
+:root {
+  --white-color: hsl(170, 12%, 98%);
+  --gray-color: hsl(170, 4%, 60%);
+  --black-color: hsl(170, 12%, 8%);
+  --body-font: "Bona Nova", serif;
+  --normal-font-size: .938rem;
+
+  @media screen and (min-width: 1120px) {
+    --normal-font-size: 1rem;
+  }
+}
