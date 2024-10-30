@@ -127,3 +127,19 @@
     @apply bg-background text-foreground;
     }
 }
+.background-image {
+  position: relative;
+}
+
+.background-image::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("https://i.ibb.co/zPj1s3d/Home-page-Workshop.png");
+  background-size: cover;
+  background-position: center;
+  z-index: -1;
+}

@@ -4,7 +4,7 @@ import Content from './Content';
 export default function Footer() {
   return (
     <div 
-        id='footer1'
+        id='footer-tech'
         className='relative h-[800px]'
         style={{clipPath: "polygon(0% 0, 100% 0%, 100% 100%, 0 100%)"}}
     >

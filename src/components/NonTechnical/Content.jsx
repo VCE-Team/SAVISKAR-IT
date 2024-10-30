@@ -32,7 +32,6 @@ const Nav = () => {
             <div className='flex flex-col text-2xl gap-2'>
                 <a href="#Home"><p>Home</p></a>
                 <a href="#events"><p>Events</p></a>
-                <a href=""><p>Gallery</p></a>
                 <p>Contact Us</p>
             </div>
         </div>

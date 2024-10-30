@@ -24,7 +24,7 @@ const HorizontalScrollCarousel = () => {
   const x = useTransform(scrollYProgress, [0, 1], ["0%", "-99%"]);
 
   return (
-    <section ref={targetRef} className="relative h-[300vh] px-12 md:px-44">
+    <section ref={targetRef} className="relative h-[300vh] px-8 md:px-40">
       <div className="sticky top-0 flex h-screen items-center overflow-hidden">
         <motion.div style={{ x }} className="flex gap-28">
           {cards.map((card) => {
@@ -38,7 +38,7 @@ const HorizontalScrollCarousel = () => {
 
 const Card = ({ card }) => {
   return (
-    <div className="group flex flex-col md:flex-row relative h-[450px] w-[350px] md:h-[600px] md:w-[1100px] overflow-hidden p-5 px-6 bg-neutral-200">
+    <div className="group flex flex-col md:flex-row relative p-3 w-[350px] md:h-[600px] md:w-[1100px] overflow-hidden p-5 px-6 bg-neutral-200">
       {/* Text Container */}
       <div className="flex-1 h-1/2 md:h-full md:w-1/2 flex items-center p-4">
         <div className="flex flex-col">
@@ -61,25 +61,25 @@ const cards = [
   {
     url: "https://i.ibb.co/Dfqzf9t/lan-transformed.jpg",
     title: "LAN Gaming Tournament",
-    description: "A LAN-based gaming competition featuring top multiplayer games. Teams compete in real-time to win the ultimate gaming crown. Perfect for gamers of all skill levels!",
+    description: "Step into the arena of fierce competition! Join the LAN Gaming Tournament, where teams battle it out in thrilling multiplayer games for ultimate glory. Whether you’re a seasoned pro or a casual gamer, this event promises excitement and camaraderie!",
     id: 1,
   },
   {
-    url: "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?q=80&w=2912&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
-    title: "Poster Presentation",
-    description: "A platform for participants to showcase innovative ideas and solutions through posters. Engages the audience with visual storytelling and persuasive insights.",
+    url: "https://i.ibb.co/J34xjmp/Whats-App-Image-2024-10-30-at-14-31-41-748c68f7.jpg",
+    title: "Reel Time Rumble",
+    description: "Unleash your creativity at Reel Time Rumble! This is your chance to present innovative ideas through engaging posters, captivating the audience with visual storytelling and impactful insights. Stand out, inspire, and make your mark!",
     id: 2,
   },
   {
     url: "https://www.klnce.edu/echelon2k17/assets/images/treasure.jpg",
     title: "Treasure Hunt",
-    description: "An adventurous hunt across the venue, filled with challenging clues and team-building tasks. Perfect for thrill-seekers and puzzle lovers.",
+    description: "Embark on an exhilarating adventure with our Treasure Hunt! Navigate through the venue, solve challenging clues, and complete team-building tasks. Perfect for thrill-seekers and puzzle enthusiasts looking to test their wits and teamwork!",
     id: 3,
   },
   {
-    url: "https://i.ibb.co/HtLv0Ds/image.png",
-    title: "Wellness",
-    description: "Workshops focused on mental and physical well-being, offering practices and techniques to enhance overall health and mindfulness.",
+    url: "https://i.ibb.co/7Y1PqY8/Whats-App-Image-2024-10-30-at-14-37-31-5e987982.jpg",
+    title: "Live PhotoShop",
+    description: "Dive into the world of creativity with Live PhotoShop! Participate in dynamic workshops that enhance your digital art skills while focusing on mental and physical well-being. Discover techniques that foster mindfulness and inspire your artistic journey.",
     id: 4,
   }
 ];
