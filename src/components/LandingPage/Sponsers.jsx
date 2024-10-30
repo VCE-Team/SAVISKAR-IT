@@ -68,10 +68,10 @@ const Sponsers = () => {
                                         >Of Our Event</h1>
       <div className="w-full flex justify-center mt-8">
         <div className="flex flex-wrap gap-8 p-2 place-content-center">
-          <TiltCard image="https://media.licdn.com/dms/image/v2/D560BAQEaSbVnaT-lkQ/company-logo_200_200/company-logo_200_200/0/1681840496553?e=1738195200&v=beta&t=RB2M1SBIkHKiXXVlWJn5BVEpDjav6gkMW-q3hI1nwRk" />
-          <TiltCard image="Sponsor 2" />
-          <TiltCard image="Sponsor 3" />
-          <TiltCard image="Sponsor 4" />
+          <TiltCard image="https://media.licdn.com/dms/image/v2/D560BAQEaSbVnaT-lkQ/company-logo_200_200/company-logo_200_200/0/1681840496553?e=1738195200&v=beta&t=RB2M1SBIkHKiXXVlWJn5BVEpDjav6gkMW-q3hI1nwRk" title="Sponser 1" />
+          <TiltCard image="" title="Sponser 2" />
+          <TiltCard image="" title="Sponsor 3" />
+          <TiltCard image="" title="Sponsor 4" />
         </div>
       </div>
     </div>
@@ -81,7 +81,7 @@ const Sponsers = () => {
 const ROTATION_RANGE = 32.5;
 const HALF_ROTATION_RANGE = 32.5 / 2;
 
-const TiltCard = ({ image }) => {
+const TiltCard = ({ image,title }) => {
   const ref = useRef(null);
   const x = useMotionValue(0);
   const y = useMotionValue(0);
@@ -125,13 +125,20 @@ const TiltCard = ({ image }) => {
         }}
         className="absolute inset-4 grid place-content-center rounded-xl bg-white shadow-lg"
       >
-        {/* <FiMousePointer
-          style={{
-            transform: "translateZ(75px)",
-          }}
-          className="mx-auto text-4xl"
-        /> */}
-        <img src={image} alt="" />
+
+{!image ? (
+        <>
+          <FiMousePointer
+            style={{
+              transform: "translateZ(75px)",
+            }}
+            className="mx-auto text-4xl"
+          />
+          <h1 className="text-center text-xl mt-2">{title}</h1>
+        </>
+      ) : (
+        <img src={image} alt={title} className="w-full h-auto object-cover" />
+      )}
       </div>
     </motion.div>
   );

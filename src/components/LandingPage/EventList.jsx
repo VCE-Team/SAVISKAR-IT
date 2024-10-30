@@ -11,23 +11,23 @@ export const EventList = () => {
 
     useEffect(() => {
         // Create a scroll trigger for the event cards
-        const eventdownTrigger = ScrollTrigger.create({
-            trigger: "#event",
-            start: "top 55%",
-            end: "30% 50%",
-            onEnter: () => {
-                gsap.to(".event-card", {
-                    opacity: 1,
-                    translateY: 0, // Staggering the animations by 0.1 seconds
-                });
-            },
-            onLeaveBack: () => {
-                gsap.to(".event-card", {
-                    opacity: 0,
-                    translateY: 52,
-                });
-            },
-        });
+        // const eventdownTrigger = ScrollTrigger.create({
+        //     trigger: "#event",
+        //     start: "top 55%",
+        //     end: "30% 50%",
+        //     onEnter: () => {
+        //         gsap.to(".event-card", {
+        //             opacity: 1,
+        //             translateY: 0, // Staggering the animations by 0.1 seconds
+        //         });
+        //     },
+        //     onLeaveBack: () => {
+        //         gsap.to(".event-card", {
+        //             opacity: 0,
+        //             translateY: 52,
+        //         });
+        //     },
+        // });
 
         const textTrigger = ScrollTrigger.create({
             trigger: "#event",
@@ -48,7 +48,7 @@ export const EventList = () => {
         });
 
         return () => {
-            eventdownTrigger.kill();
+            // eventdownTrigger.kill();
             textTrigger.kill();
         };
     }, []);
@@ -60,10 +60,10 @@ export const EventList = () => {
                     Explore all Events
                     <span className="text-slate-400"></span>
                 </h2> */}
-                <h2 id='event-text' className="text-4xl font-bold md:text-5xl px-2 py-4 text-white opacity-0 translate-y-32">
+                <h2 id='event-text' className="text-3xl font-bold md:text-5xl px-2 py-4 text-white opacity-0 translate-y-32">
                         Explore
                 </h2>
-                <h1 id='event-text' className="text-5xl md:text-6xl px-2 font-bold text-transparent opacity-0 translate-y-32"
+                <h1 id='event-text' className="text-3xl md:text-6xl px-2 font-bold text-transparent opacity-0 translate-y-32"
                                         style={{
                                             WebkitTextStrokeWidth: "2px",
                                             WebkitTextStrokeColor: "white",
@@ -72,7 +72,7 @@ export const EventList = () => {
             
             </div>
             <div className="mb-4 grid grid-cols-12 gap-4 ">
-                <BounceCard className="col-span-12 md:col-span-4 opacity-0 translate-y-52 event-card">
+                <BounceCard className="col-span-12 md:col-span-4 event-card">
                     <CardTitle>Hackathon</CardTitle>
                     <img
                         src="https://images.unsplash.com/photo-1625461291092-13d0c45608b3?q=80&w=2835&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -86,7 +86,7 @@ export const EventList = () => {
                         </span>
                     </div>
                 </BounceCard>
-                <BounceCard className="col-span-12 md:col-span-8 opacity-0 translate-y-52 event-card">
+                <BounceCard className="col-span-12 md:col-span-8 event-card">
                     <CardTitle>Technical Events</CardTitle>
                     <img
                         src="https://images.unsplash.com/photo-1521737852567-6949f3f9f2b5?q=80&w=2894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -102,7 +102,7 @@ export const EventList = () => {
                         </span>
                     </div>
                 </BounceCard>
-                <BounceCard className="col-span-12 md:col-span-8 opacity-0 translate-y-52 event-card">
+                <BounceCard className="col-span-12 md:col-span-8 event-card">
                     <CardTitle>Non-Technical Events</CardTitle>
                     <img
                         src="https://images.unsplash.com/photo-1635514569146-9a9607ecf303?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
@@ -116,7 +116,7 @@ export const EventList = () => {
                         </span>
                     </div>
                 </BounceCard>
-                <BounceCard className="col-span-12 md:col-span-4 opacity-0 translate-y-52 event-card">
+                <BounceCard className="col-span-12 md:col-span-4 event-card">
                     <CardTitle>Workshops</CardTitle>
                     <img
                         src="https://images.unsplash.com/photo-1528605105345-5344ea20e269?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
