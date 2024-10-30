@@ -2,9 +2,9 @@ import React from 'react'
 
 const WhatWeAbout = () => {
   return (
-    <div className='p-5 bg-black'>
+    <div className='absolute p-5 bg-black pb-10'>
        <div className='flex flex-col md:flex-row py-10 items-center md:px-24 gap-16 md:py-32'>
-       <div className='w-full'>
+       <div className='w-full hidden md:block'>
             <img src="https://i.ibb.co/wpXk9tn/Hackathon.png" alt="" />
         </div>
         <div className='p-10'>

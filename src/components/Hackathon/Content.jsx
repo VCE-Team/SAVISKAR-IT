@@ -11,7 +11,7 @@ export default function Content() {
 
 const Section1 = () => {
     return (
-        <div className='p-5'>
+        <div>
             <Nav />
         </div>
     )
@@ -19,8 +19,8 @@ const Section1 = () => {
 
 const Section2 = () => {
     return (
-        <div className='flex justify-between items-end sm:p-5'>
-            <h1 className='sm:text-[14vw] text-[8vh] leading-[0.8] mt-10'>Saviskar 2K24</h1>
+        <div className='flex justify-between items-end'>
+            <h1 className='text-[14vw] leading-[0.8] mt-10'>Saviskar 2K24</h1>
             <p>©copyright</p>
         </div>
     )
@@ -28,12 +28,11 @@ const Section2 = () => {
 
 const Nav = () => {
     return (
-        <div className='flex shrink-0 gap-20 mt-20'>
+        <div className='flex shrink-0 gap-20 mt-32 ms:mt-20 overfolw-hidden'>
             <div className='flex flex-col text-2xl gap-2'>
-                <h3 className='mb-2 uppercase text-[#ffffff80]'>About</h3>
-                <p>Home</p>
-                <p>Projects</p>
-                <p>Our Mission</p>
+                <a href="#Home"><p>Home</p></a>
+                <a href="#events"><p>Events</p></a>
+                <a href=""><p>Gallery</p></a>
                 <p>Contact Us</p>
             </div>
         </div>

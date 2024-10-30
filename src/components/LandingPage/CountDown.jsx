@@ -81,37 +81,37 @@ const Countdown = ({ targetDate, eventTitle, location }) => {
 
   return (
     <div id='countdown'
-      className="bg-black text-white border rounded-xl p-6 md:px-24 md:py-10 bg-cover bg-center opacity-0 translate-y-28"
+      className="bg-black text-white border rounded-xl p-5 md:px-24 md:py-10 bg-cover bg-center opacity-0 translate-y-28"
       // style={{
       //   backgroundImage: "url('https://images.unsplash.com/photo-1727121798392-73441c6b4a3b?q=80&w=2940&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
       // }}
     >
       <h1>Event Starts in</h1>
-      <div className="flex space-x-10 mt-4 p-2 md:p-5">
+      <div className="flex space-x-7 mt-4 p-2 md:p-5">
         <div>
           <p className="text-sm text-[#7e7d7d]">Days</p>
-          <p className="text-4xl md:text-7xl text-[#ec9d58]">{formatTime(timeLeft.days)}</p>
+          <p className="text-3xl md:text-7xl text-[#ec9d58]">{formatTime(timeLeft.days)}</p>
         </div>
         <div>
-          <p className="text-sm text-[#3f3e3e]">Hours</p>
-          <p className="text-4xl md:text-7xl text-[#ec9d58]">{formatTime(timeLeft.hours)}</p>
+          <p className="text-sm text-[#7e7d7d]">Hours</p>
+          <p className="text-3xl md:text-7xl text-[#ec9d58]">{formatTime(timeLeft.hours)}</p>
         </div>
         <div>
-          <p className="text-sm text-[#3f3e3e]">Minutes</p>
-          <p className="text-4xl md:text-7xl text-[#ec9d58]">{formatTime(timeLeft.minutes)}</p>
+          <p className="text-sm text-[#7e7d7d]">Minutes</p>
+          <p className="text-3xl md:text-7xl text-[#ec9d58]">{formatTime(timeLeft.minutes)}</p>
         </div>
         <div>
-          <p className="text-sm text-[#3f3e3e]">Seconds</p>
-          <p className="text-4xl md:text-7xl text-[#ec9d58]">{formatTime(timeLeft.seconds)}</p>
+          <p className="text-sm text-[#7e7d7d]">Seconds</p>
+          <p className="text-3xl md:text-7xl text-[#ec9d58]">{formatTime(timeLeft.seconds)}</p>
         </div>
       </div>
-      <div className="flex space-x-4 justify-between">
+      <div className="flex space-x-2 justify-between">
         <div>
           <h1 className="text-sm mt-4">{eventTitle}</h1>
-          <p>{location}</p>
+          <p className='text-sm'>{location}</p>
         </div>
         <div>
-          <button className="bg-[#aef5ed] text-black px-4 py-2 rounded-full mt-4 hover:bg-[#27FEE4]"> &rarr;</button>
+          <button className="bg-[#aef5ed] text-black px-3 py-2 rounded-full mt-4 hover:bg-[#27FEE4]"> &rarr;</button>
         </div>
       </div>
     </div>
@@ -124,7 +124,7 @@ const App = () => {
 
   return (
     <div id='count' className='bg-black'>
-      <h2 id='count-text' className="text-3xl  font-bold md:text-5xl px-10 py-4 md:px-24 text-white opacity-0 translate-y-32">
+      <h2 id='count-text' className="text-3xl font-bold md:text-5xl px-10 py-4 md:px-24 text-white opacity-0 translate-y-32">
       Unlock the Fun
                 </h2>
                 <h1 id='count-text' className="text-4xl  md:text-6xl px-10 font-bold md:px-24 text-transparent opacity-0 translate-y-32"

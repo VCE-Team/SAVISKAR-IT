@@ -3,7 +3,7 @@ import { ShimmerButtonDemo } from "../ShimmerButton/ShimmerButtonDemo";
 
 const Home = () => {
   return (
-    <div className="bg-gradient-to-b bg-black h-screen text-white" style={{ backgroundImage: 'url(https://i.ibb.co/zPj1s3d/Home-page-Workshop.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
+    <div id='nontech' className="bg-gradient-to-b bg-black h-screen text-white" style={{ backgroundImage: 'url(https://i.ibb.co/zPj1s3d/Home-page-Workshop.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <header className="">
         <div className="px-4 mx-auto sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16 lg:h-20">

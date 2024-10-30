@@ -43,7 +43,8 @@ const Home = () => {
                   <h1 className="relative text-4xl font-bold text-white sm:text-6xl lg:text-7xl">Events</h1>
                 </div>
               </h1>
-              <p className="md:mt-8 mt-8 text-base text-white sm:text-xl">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat.</p>
+              <p className="md:mt-8 mt-8 text-base text-white sm:text-xl">Step into the ultimate arena for tech enthusiasts, visionaries, and problem-solvers! Saviskar is here to ignite your passion for technology and test the boundaries of what’s possible. Dive into hands-on challenges.
+</p>
               <div className="md:mt-10 sm:flex sm:items-center sm:space-x-8">
                 <a href="#Events" title="" className="inline-flex items-center mt-6 text-base font-semibold transition-all duration-200 sm:mt-0 hover:opacity-80">
                   Start exploring 

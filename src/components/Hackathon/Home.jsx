@@ -47,16 +47,16 @@ const Home = () => {
         </div>
     </header>
 
-    <section class="md:pt-52 pt-12  lg:pt-8 pb-10">
+    <section class="md:pt-52 lg:pt-8">
         <div class="px-4 mx-auto max-w-7xl sm:px-6 lg:px-8">
             <div class="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-16">
                 <div>
                     <div class="text-center lg:text-left">
                         <p className='text-[#2DCDC4] text-2xl'>13-14 November</p>
-                        <p className='text-[#2DCDC4] text-5xl'>24hrs</p>
-                        <p className='text-[#2DCDC4] text-9xl'>Hackthon</p>
+                        <p className='text-[#2DCDC4] text-4xl md:text-5xl'>24hrs</p>
+                        <p className='text-[#2DCDC4] text-6xl md:text-9xl'>Hackthon</p>
                         <h1 class="text-5xl font-bold leading-tight sm:text-5xl sm:leading-tight text-white lg:leading-tight lg:text-4xl font-pj">Join the fun
-                        <h1 className="text-4xl font-bold text-transparent"
+                        <h1 className="text-3xl md:text-4xl font-bold text-transparent"
                         style={{
                             WebkitTextStrokeWidth: "1px",
                             WebkitTextStrokeColor: "white",
@@ -65,7 +65,6 @@ const Home = () => {
                         code with us and unleash your skills
                         </h1>
                             </h1>
-                        <p class="mt-2 text-lg text-gray-600 sm:mt-8 font-inter">Register Now.</p>
 
                         {/* <form action="#" method="POST" class="mt-8 sm:mt-10">
                             <div class="relative p-2 sm:border sm:border-gray-400 group sm:rounded-xl sm:focus-within:ring-1 sm:focus-within:ring-gray-900 sm:focus-within:border-gray-900">
@@ -86,7 +85,7 @@ const Home = () => {
 
                 </div>
 
-                <div className='block sm:hidden lg:block'>
+                <div className='block sm:hidden lg:block overflow-hidden'>
                 <svg
                     className="w-full"
                     width="386"
