@@ -31,11 +31,11 @@ const Home = () => {
                 </div>
 
                 <div class="hidden lg:flex lg:ml-10 xl:ml-16 lg:items-center lg:justify-center lg:space-x-8 xl:space-x-16">
-                    <a href="#" title="" class="text-base text-white font-medium transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Challenges </a>
+                    <a href="#challenges" title="" class="text-base text-white font-medium transition-all duration-200 rounded"> Challenges </a>
 
-                    <a href="#" title="" class="text-base font-medium text-white transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> Criteria </a>
+                    <a href="#criteria" title="" class="text-base font-medium text-white transition-all duration-200 rounded "> Criteria </a>
 
-                    <a href="#" title="" class="text-base font-medium text-white transition-all duration-200 rounded focus:outline-none font-pj hover:text-opacity-50 focus:ring-1 focus:ring-gray-900 focus:ring-offset-2"> TimeLine </a>
+                    <a href="#timeline" title="" class="text-base font-medium text-white transition-all duration-200 rounded"> TimeLine </a>
                 </div>
 
                 <div class="lg:ml-auto lg:flex lg:items-center lg:space-x-8 xl:space-x-10">
@@ -52,15 +52,17 @@ const Home = () => {
             <div class="grid max-w-lg grid-cols-1 mx-auto lg:max-w-full lg:items-center lg:grid-cols-2 gap-y-12 lg:gap-x-16">
                 <div>
                     <div class="text-center lg:text-left">
-                        <p className='text-[#2DCDC4] text-2xl'>14-15 November</p>
-                        <h1 class="text-5xl font-bold leading-tight sm:text-5xl sm:leading-tight text-white lg:leading-tight lg:text-6xl font-pj">Taking Tech for the
-                        <h1 className="text-6xl font-bold text-transparent"
+                        <p className='text-[#2DCDC4] text-2xl'>13-14 November</p>
+                        <p className='text-[#2DCDC4] text-5xl'>24hrs</p>
+                        <p className='text-[#2DCDC4] text-9xl'>Hackthon</p>
+                        <h1 class="text-5xl font-bold leading-tight sm:text-5xl sm:leading-tight text-white lg:leading-tight lg:text-4xl font-pj">Join the fun
+                        <h1 className="text-4xl font-bold text-transparent"
                         style={{
-                            WebkitTextStrokeWidth: "2px",
+                            WebkitTextStrokeWidth: "1px",
                             WebkitTextStrokeColor: "white",
                         }}
                         >
-                        Future
+                        code with us and unleash your skills
                         </h1>
                             </h1>
                         <p class="mt-2 text-lg text-gray-600 sm:mt-8 font-inter">Register Now.</p>
