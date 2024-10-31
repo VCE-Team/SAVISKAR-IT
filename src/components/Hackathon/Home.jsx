@@ -17,7 +17,7 @@ const Home = () => {
                 <div class="flex-shrink-0">
                 <img
                   className="w-auto h-10"
-                  src="https://i.ibb.co/qrhhX9Y/logo-semi.png"
+                  src="https://i.ibb.co/pfZ3yc5/logo.png"
                   alt=""
                   />
                 </div>

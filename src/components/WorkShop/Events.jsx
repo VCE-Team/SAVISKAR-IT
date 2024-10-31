@@ -1,77 +1,60 @@
 import React, { useRef } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 import { FiArrowUpRight } from "react-icons/fi";
+
 const Events = () => {
   return (
     <div className="bg-black text-white " style={{ backgroundImage: 'url(https://i.ibb.co/zPj1s3d/Home-page-Workshop.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <TextParallaxContent
-        imgUrl="https://i.ibb.co/vvwt4zX/Web-Designing-Image.png"
-        subheading="Collaborate"
-        heading="Built for all of us."
-      >
-    <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
-    <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
-      Web Desigining Workshop
-    </h2>
-    <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-xl text-white md:text-2xl">
-      This workshop guides participants through the essentials of web development, covering core technologies like HTML, CSS, and JavaScript. Attendees will learn to create responsive layouts, incorporate interactive elements, and follow modern design standards to build professional-looking websites. Emphasis is placed on user experience, accessibility, and best practices, preparing participants to build websites that function seamlessly across various device.
-      </p>
-      {/* <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-        reiciendis blanditiis aliquam aut fugit sint.
-      </p> */}
-      {/* <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
-        Learn more <FiArrowUpRight className="inline" />
-      </button> */}
-    </div>
-  </div>
-      </TextParallaxContent>
-      <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1530893609608-32a9af3aa95c?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        subheading="Quality"
-        heading="Never compromise."
+        //imgUrl="https://i.ibb.co/vvwt4zX/Web-Designing-Image.png"
+        imgUrl= "https://images.unsplash.com/photo-1648134859211-4a1b57575f4e?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        subheading="Craft. Create. Innovate."
+        heading="Unleashing Web Brilliance"
       >
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
-    <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
-    IOT (Internet of Things)
-    </h2>
-    <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-xl text-white md:text-2xl">
-      The IoT workshop introduces the rapidly growing field of interconnected devices, covering the principles of sensor networks, data collection, and communication protocols. Participants will understand how IoT enables smart environments, such as home automation, wearable tech, and industrial monitoring. Practical exercises will showcase how sensors, actuators, and cloud platforms come together, offering insights into both the technical and practical applications of IoT in daily life and industry.
-      </p>
-      {/* <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-        reiciendis blanditiis aliquam aut fugit sint.
-      </p> */}
-      {/* <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
-        Learn more <FiArrowUpRight className="inline" />
-      </button> */}
-    </div>
-  </div>
+          <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
+            Mastering Web Design Fundamentals
+          </h2>
+          <div className="col-span-1 md:col-span-8">
+            <p className="mb-4 text-xl text-white md:text-2xl">
+              Explore the Art of Responsive, Engaging Web Pages. This workshop guides participants through the essentials of web development, covering core technologies like HTML, CSS, and JavaScript. Attendees will learn to create responsive layouts, incorporate interactive elements, and follow modern design standards to build professional-looking websites.
+            </p>
+          </div>
+        </div>
       </TextParallaxContent>
+
       <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1504610926078-a1611febcad3?q=80&w=2416&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        subheading="Modern"
-        heading="Dress for the best."
+        imgUrl="https://images.unsplash.com/photo-1626335507832-40da3b65de57?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        subheading="Connect with the Future"
+        heading="IoT: The World at Your Fingertips"
       >
-            <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
-    <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
-    Automation
-    </h2>
-    <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-xl text-white md:text-2xl">
-      Focused on the practical use of automation in industries, this workshop covers a range of tools and methods for streamlining tasks. Participants will learn about scripting, robotic process automation (RPA), and AI-driven solutions that reduce manual effort and increase efficiency. Case studies will show how automation is transforming fields like manufacturing, data entry, and customer service, giving participants a solid foundation to implement automation in real-world scenarios.
-      </p>
-      {/* <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-        reiciendis blanditiis aliquam aut fugit sint.
-      </p> */}
-      {/* <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
-        Learn more <FiArrowUpRight className="inline" />
-      </button> */}
-    </div>
-  </div>
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
+          <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
+            The Smart World of IoT
+          </h2>
+          <div className="col-span-1 md:col-span-8">
+            <p className="mb-4 text-xl text-white md:text-2xl">
+              Dive into the Power of Interconnected Devices. This IoT workshop introduces the rapidly growing field of interconnected devices, covering the principles of sensor networks, data collection, and communication protocols.
+            </p>
+          </div>
+        </div>
+      </TextParallaxContent>
+
+      <TextParallaxContent
+        imgUrl="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        subheading="Efficiency at its Peak"
+        heading="Automate to Innovate"
+      >
+        <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
+          <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
+            Automation: Transforming Tomorrow
+          </h2>
+          <div className="col-span-1 md:col-span-8">
+            <p className="mb-4 text-xl text-white md:text-2xl">
+              Streamline Processes with Intelligent Automation. Focused on the practical use of automation in industries, this workshop covers a range of tools and methods for streamlining tasks. Participants will learn about scripting, robotic process automation (RPA), and AI-driven solutions that increase efficiency.
+            </p>
+          </div>
+        </div>
       </TextParallaxContent>
     </div>
   );
@@ -155,28 +138,5 @@ const OverlayCopy = ({ subheading, heading }) => {
     </motion.div>
   );
 };
-
-const ExampleContent = () => (
-  <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
-    <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
-      Additional content explaining the above card here
-    </h2>
-    <div className="col-span-1 md:col-span-8">
-      <p className="mb-4 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Quasi,
-        blanditiis soluta eius quam modi aliquam quaerat odit deleniti minima
-        maiores voluptate est ut saepe accusantium maxime doloremque nulla
-        consectetur possimus.
-      </p>
-      <p className="mb-8 text-xl text-neutral-600 md:text-2xl">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium
-        reiciendis blanditiis aliquam aut fugit sint.
-      </p>
-      <button className="w-full rounded bg-neutral-900 px-9 py-4 text-xl text-white transition-colors hover:bg-neutral-700 md:w-fit">
-        Learn more <FiArrowUpRight className="inline" />
-      </button>
-    </div>
-  </div>
-);
 
 export default Events;

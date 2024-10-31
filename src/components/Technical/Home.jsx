@@ -9,7 +9,7 @@ const Home = () => {
           <div className="flex items-center justify-between h-16 lg:h-20">
             <div className="flex-shrink-0">
               <a href="#" title="" className="flex">
-                <img className="w-auto h-8" src="https://i.ibb.co/KhfVyHB/logo-semi.png" alt="" />
+                <img className="w-auto h-8" src="https://i.ibb.co/pfZ3yc5/logo.png" alt="" />
               </a>
             </div>
 
@@ -57,11 +57,11 @@ const Home = () => {
             </div>
 
             <div className="flex justify-center items-center p-4 sm:p-6 md:p-0">
-  <img 
+  {/* <img 
     className="h-[50vh] w-full sm:h-[60vh] md:h-[80vh] max-w-full object-cover" 
-    src="https://i.ibb.co/X2WY2Hr/Event-Pages.png" 
+     src="https://i.ibb.co/X2WY2Hr/Event-Pages.png" 
     alt="Event Page" 
-  />
+  /> */}
 </div>
           </div>
         </div>
