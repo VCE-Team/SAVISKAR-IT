@@ -6,8 +6,7 @@ const Events = () => {
   return (
     <div className="bg-black text-white " style={{ backgroundImage: 'url(https://i.ibb.co/zPj1s3d/Home-page-Workshop.png)', backgroundSize: 'cover', backgroundPosition: 'center' }}>
       <TextParallaxContent
-        //imgUrl="https://i.ibb.co/vvwt4zX/Web-Designing-Image.png"
-        imgUrl= "https://images.unsplash.com/photo-1648134859211-4a1b57575f4e?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        imgUrl="https://images.unsplash.com/photo-1648134859211-4a1b57575f4e?q=80&w=2060&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
         subheading="Craft. Create. Innovate."
         heading="Unleashing Web Brilliance"
       >
@@ -24,17 +23,17 @@ const Events = () => {
       </TextParallaxContent>
 
       <TextParallaxContent
-        imgUrl="https://images.unsplash.com/photo-1626335507832-40da3b65de57?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-        subheading="Connect with the Future"
-        heading="IoT: The World at Your Fingertips"
+        imgUrl="https://images.unsplash.com/photo-1526256262350-7da7584cf5eb?q=80&w=2564&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+        subheading="Step Into New Realities"
+        heading="AV/VR: The Immersive Experience"
       >
         <div className="mx-auto grid max-w-5xl grid-cols-1 gap-8 px-4 pb-24 pt-12 md:grid-cols-12">
           <h2 className="col-span-1 text-3xl font-bold md:col-span-4">
-            The Smart World of IoT
+            Augmented & Virtual Reality Workshop
           </h2>
           <div className="col-span-1 md:col-span-8">
             <p className="mb-4 text-xl text-white md:text-2xl">
-              Dive into the Power of Interconnected Devices. This IoT workshop introduces the rapidly growing field of interconnected devices, covering the principles of sensor networks, data collection, and communication protocols.
+              Discover the Future of Interactive Tech. This AV/VR workshop explores the immersive world of augmented and virtual reality, covering foundational concepts, tools, and techniques. Participants will learn to build virtual environments, implement AR overlays, and understand the potential applications in gaming, education, and training.
             </p>
           </div>
         </div>
